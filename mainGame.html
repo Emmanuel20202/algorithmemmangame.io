@@ -12,6 +12,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<audio autoplay loop>
+    <source src="The Final Countdown - Europe (Lyrics).mp3">
+  </audio>
 <!--Nav Bar-->
 <body>
     <div class="topnav" id="myTopnav">
@@ -20,11 +23,26 @@
         <a href="About.html">ABOUT</a>
         <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
+  <h2 style="text-align: center;">JavaScript Prompt</h2>
+
+  <button onclick="myFunction1()" style="text-align: center;">Try it</button>
+  
+  <p id="demo"></p>
+  <script>
+  function myFunction1() {
+    var txt;
+    var person = prompt("Please enter your name:", "Harry Potter");
+    if (person == null || person == "") {
+      txt = "User cancelled the prompt.";
+    } else {
+      txt = "Hello " + person + "Welcome to the final boss game?";
+    }
+    document.getElementById("demo").innerHTML = txt;
+  }
+  </script>
 
 
-  <audio autoplay loop>
-    <source src="The Final Countdown - Europe (Lyrics).mp3">
-  </audio>
+
 
 <!--JavaScript Function-->
 <script>
@@ -37,7 +55,5 @@
       }
     }
 </script>
-
-
 </body>
 </html>
