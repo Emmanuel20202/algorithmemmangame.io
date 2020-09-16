@@ -36,7 +36,24 @@
     padding-bottom: 100dp;
 }
 
-
+.diamond {
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-bottom-color: red;
+      position: relative;
+      top: -50px;
+    }
+    .diamond:after {
+      content: '';
+      position: absolute;
+      left: -50px;
+      top: 50px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-top-color: red;
+    }
 
     </style>
 <body>
@@ -55,9 +72,16 @@
   <div class="oval" style="text-align: center;"> 
     <button class="start" onclick="myFunction1()">START GAME</button>
   </div>
+
   <div class="arrow1" style="align-content: center;">
     <span class="demo" style="font-size: 190px; padding: 100dp;">&darr;</span>
   </div>
+
+
+   <div class="arrow1" style="align-content: center;">
+    <span class="demo" style="font-size: 190px; padding: 100dp;">&darr;</span>
+  </div>
+
 
 
     
