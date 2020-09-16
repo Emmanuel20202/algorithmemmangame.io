@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Final Boss Game</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!--Nav Bar-->
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="Favorites.html">Rules</a>
+        <a href="Hobbies.html">About</a>
+        <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+<div class="jumbotron text-center" style="text-align: center;">
+
+  <div class="container">
+    <br>
+    <h1>Welcome to the Final Boss Game</h1>
+   
+  </div>
+  <br>
+  <p class="card-text" style="font-size: 19px; font-family: 'Courier New', Courier, monospace; ">I love to make web application and mobile application that can change the world</p>
+  <br>
+  <br> 
+  <a href="Favorites.html" class="btn btn-primary" style="width: max-content;"><b>START GAME</b></a>
+</div>
+
+  <audio autoplay loop>
+    <source src="The Final Countdown - Europe (Lyrics).mp3">
+  </audio>
+
+<!--JavaScript Function-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
+
+</body>
+</html>
