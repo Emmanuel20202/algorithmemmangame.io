@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Final Boss Game</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  
+  <style>
+    #myDIV {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      background-color: lightblue;
+      margin-top: 20px;
+    }
+    </style>
+
+</head>
+<audio autoplay loop>
+    <source src="The Final Countdown - Europe (Lyrics).mp3">
+  </audio>
+
+
+
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">HOMEPAGE</a>
+        <a href="#main" class="active">MAIN-GAME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+ <br>
+<h1 style="text-align: center;">CORRECT DECISION</h1>
+
+
+
+<button onclick="myFunction1()">CLICK ME TO APPEAR THE BOSS</button>
+<br>
+<br>
+<br>
+<div id="myDIV">
+This is my DIV element.
+<img src="boss.gif" class="mx-auto d-block" style="width:50%"> 
+</div>
+
+<script>
+function myFunction1() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<!--JavaScript Function-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+</body>
+</html>
