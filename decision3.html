@@ -30,7 +30,7 @@
       width: 100%;
       padding: 50px 0;
       text-align: center;
-      background-color: lightblue;
+      background-color: rgb(200, 223, 72);
       margin-top: 20px;
     }
 
@@ -39,7 +39,7 @@
      width: 250px;
      background: #005BAA;
      margin: auto;
-     border-radius: 50%;
+     border-radius: 0%;
    }
    .start{
        height: 120px;
@@ -47,7 +47,7 @@
        margin: auto;
        color: aliceblue;
        background: #005BAA;
-       border-radius: 50%;
+       border-radius: 0%;
    }
    
    .arrow1{
@@ -78,8 +78,8 @@
        </style>
 
          <div class="jumbotron text-center">
-           <h1>ALGORITHM GAME</h1>
-           <p>Click Start to Enter your name and to see the instruction</p> 
+           <h1 style="color:green;">CORRECT DECISION</h1>
+          
          </div>
    
      <p id="demo" style="text-align: center; font-size: larger;"></p>
@@ -88,7 +88,7 @@
      
      <div class="oval" style="text-align: center;"> 
        <button class="start" onclick="myFunction1()">START GAME</button>
-       <p onclick="myFunction1()" style="width: 15%; align-content: center; height: 80px; background-color: lawngreen;">CLICK ME TO APPEAR THE BOSS</p>
+     
     </div>
       
     
@@ -144,41 +144,6 @@
    
    
    
-     <script>
-     function myFunction1() {
-       var txt;
-       var person = prompt("Please enter your name:", "Harry Potter");
-       if (person == null || person == "") {
-         txt = "User cancelled the prompt.";
-       } else {
-         txt = "Hello " + person + " Pick the Right Diamond Decision to Enter and Fight the Final Boss?";
-       }
-       document.getElementById("demo").innerHTML = txt;
-     }
-     </script>
-   
-
-
-
-
-
-
-
-
-
-
-
-<!--JavaScript Function-->
-<script>
-function myFunction1() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
 
 <script>
     function myFunction() {
