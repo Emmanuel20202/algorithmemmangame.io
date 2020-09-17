@@ -12,26 +12,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  
-  
-  <style>
-    #myDIV {
-      width: 100%;
-      padding: 50px 0;
-      text-align: center;
-      background-color: lightblue;
-      margin-top: 20px;
-    }
-    </style>
-
 </head>
 <audio autoplay loop>
     <source src="The Final Countdown - Europe (Lyrics).mp3">
   </audio>
-
-
-
 
 <body>
     <div class="topnav" id="myTopnav">
@@ -40,20 +24,151 @@
         <a href="About.html">ABOUT</a>
         <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
- <br>
-<h1 style="text-align: center;">CORRECT DECISION</h1>
+<style>
+
+#myDIV {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      background-color: lightblue;
+      margin-top: 20px;
+    }
+
+    .oval{
+     height: 120px;
+     width: 250px;
+     background: #005BAA;
+     margin: auto;
+     border-radius: 50%;
+   }
+   .start{
+       height: 120px;
+       width: 250px;
+       margin: auto;
+       color: aliceblue;
+       background: #005BAA;
+       border-radius: 50%;
+   }
+   
+   .arrow1{
+       margin: auto;
+       text-align: center;
+       padding-bottom: 100dp;
+   }
+   
+   .diamond {
+         width: 0;
+         height: 0;
+         border: 50px solid transparent;
+         border-bottom-color: red;
+         position: relative;
+         top: -50px;
+       }
+       .diamond:after {
+         content: '';
+         position: absolute;
+         left: -50px;
+         top: 50px;
+         width: 0;
+         height: 0;
+         border: 50px solid transparent;
+         border-top-color: red;
+       }
+   
+       </style>
+
+         <div class="jumbotron text-center">
+           <h1>ALGORITHM GAME</h1>
+           <p>Click Start to Enter your name and to see the instruction</p> 
+         </div>
+   
+     <p id="demo" style="text-align: center; font-size: larger;"></p>
+   
+     <!--<h2 style="text-align: center;">FLOWCHART GAME</h2>-->
+     
+     <div class="oval" style="text-align: center;"> 
+       <button class="start" onclick="myFunction1()">START GAME</button>
+       <p onclick="myFunction1()" style="width: 15%; align-content: center; height: 80px; background-color: lawngreen;">CLICK ME TO APPEAR THE BOSS</p>
+    </div>
+      
+    
+    
+
+     </div>
+   
+     <div class="arrow1" style="align-content: center;">
+       <span class="demo" style="font-size: 190px; padding: 100dp;">&darr;</span>
+     </div>
+   
+   
+   
+   <div class="jumbotron text-center">
+     <div class="row">
+       <div class="col-sm-4">
+           <a href="decision1.html"><h3 style="color: black;">Decision 1</h3></a>
+         <a href="decision1.html"><svg width="10em" height="10em" viewBox="0 0 16 16" class="bi bi-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+           <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+         </svg></a>
+       </div>
+       <div class="col-sm-4">
+         <a href="decision2.html"><h3 style="color: black;">Decision 2</h3></a>
+         <a href="decision2.html"  style="color:darkgreen"><svg width="10em" height="10em" viewBox="0 0 16 16" class="bi bi-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+           <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+         </svg></a>
+       </div>
+       <div class="col-sm-4">
+           <a href="decision3.html"><h3 style="color: black;">Decision 3</h3></a>       
+           <a href="decision3.html" style="color:crimson;"><svg width="10em" height="10em" viewBox="0 0 16 16" class="bi bi-diamond" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+             </svg></a>
+       </div>
+     </div>
+   </div>
+   
+       
+       
+   <div id="myDIV">
+    This is my DIV element.
+    <img src="boss.gif" class="mx-auto d-block" style="width:50%"> 
+    </div>
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     <script>
+     function myFunction1() {
+       var txt;
+       var person = prompt("Please enter your name:", "Harry Potter");
+       if (person == null || person == "") {
+         txt = "User cancelled the prompt.";
+       } else {
+         txt = "Hello " + person + " Pick the Right Diamond Decision to Enter and Fight the Final Boss?";
+       }
+       document.getElementById("demo").innerHTML = txt;
+     }
+     </script>
+   
 
 
 
-<button onclick="myFunction1()">CLICK ME TO APPEAR THE BOSS</button>
-<br>
-<br>
-<br>
-<div id="myDIV">
-This is my DIV element.
-<img src="boss.gif" class="mx-auto d-block" style="width:50%"> 
-</div>
 
+
+
+
+
+
+
+
+<!--JavaScript Function-->
 <script>
 function myFunction1() {
   var x = document.getElementById("myDIV");
@@ -65,14 +180,6 @@ function myFunction1() {
 }
 </script>
 
-
-
-
-
-
-
-
-<!--JavaScript Function-->
 <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
